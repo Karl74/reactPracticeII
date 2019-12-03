@@ -8,7 +8,7 @@ const ColorList = ({colors=[], onRate=f=>f, onRemove=f=>f})=>
 			colors.map((color)=>
 				<Color key={color.id}
 					   {...color}
-					   onRate={(rating)=> onRate(color.id, rating)}
+					   onRate={(rat)=> onRate(color.id, rat)}
 					   onRemove={()=>onRemove(color.id)}	/>
 		)} 
 	</div>	 
